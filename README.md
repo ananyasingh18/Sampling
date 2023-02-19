@@ -23,6 +23,8 @@ Random Undersampling: Randomly delete examples in the majority class.
 
 Dataset Before:
 <img width="375" alt="Screenshot 2023-02-20 at 4 18 16 AM" src="https://user-images.githubusercontent.com/73638083/219979966-b88d1a36-94af-4a9e-908e-93182d0be988.png">
+
+
 Dataset After:
 <img width="375" alt="Screenshot 2023-02-20 at 4 19 23 AM" src="https://user-images.githubusercontent.com/73638083/219980006-09a13f65-f579-4de7-a99b-0b735ac46216.png">
 
