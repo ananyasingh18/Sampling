@@ -111,37 +111,37 @@ for i in range(5):
     classifier = LogisticRegression(random_state = 0,max_iter=2000)
     classifier.fit(x_train, y_train)
     y_pred = classifier.predict(x_test)
-    acc = accuracy_score(y_test, y_pred)
-    res.iloc[j,i]=acc*100
+    accuracy= accuracy_score(y_test, y_pred)
+    res.iloc[j,i]=accuracy
   
 
     gnb = GaussianNB()
     gnb.fit(x_train, y_train)
     y_pred = gnb.predict(x_test)
-    acc = accuracy_score(y_test, y_pred)
-    res.iloc[j+1,i]=acc*100
+    accuracy= accuracy_score(y_test, y_pred)
+    res.iloc[j+1,i]=accuracy
     
 
     knn = KNeighborsClassifier(n_neighbors=7)
     knn.fit(x_train, y_train)
     y_pred=knn.predict(x_test)
-    acc = accuracy_score(y_test, y_pred)
-    res.iloc[j+2,i]=acc*100
+    accuracy = accuracy_score(y_test, y_pred)
+    res.iloc[j+2,i]=accuracy
 
     # Decision Tree
     clf_entropy = DecisionTreeClassifier(criterion = "entropy", random_state = 100,max_depth = 3, min_samples_leaf = 5)
     clf_entropy.fit(x_train, y_train)
     y_pred=clf_entropy.predict(x_test)
-    acc = accuracy_score(y_test, y_pred)
-    res.iloc[j+3,i]=acc*100
+    accuracy = accuracy_score(y_test, y_pred)
+    res.iloc[j+3,i]=accuracy
     # print("Decision")
 
     # RandomForest Classifier
     clf = RandomForestClassifier(n_estimators = 100) 
     clf.fit(x_train, y_train)
     y_pred = clf.predict(x_test)
-    acc = accuracy_score(y_test, y_pred)
-    res.iloc[j+4,i]=acc*100
+    accuracy = accuracy_score(y_test, y_pred)
+    res.iloc[j+4,i]=accuracy
 print(res)
 
 
