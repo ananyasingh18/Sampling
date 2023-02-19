@@ -82,15 +82,15 @@ final_samples.append(cluster)
 
 stratified=df.groupby('Class', group_keys=False).apply(lambda x: x.sample(190))
 final_samples.append(stratified)
-weighted=df.head(400)
-final_samples.append(weighted)
+conv=df.head(400)
+final_samples.append(conv)
 
 
 
 # In[6]:
 
 
-methods=['Simple Random','Systematic','Cluster','Stratified','Weighted']
+methods=['Simple Random','Systematic','Cluster','Stratified','Convenience']
 res=pd.DataFrame(columns=methods, index=['Logistic Regression','Naive Bayes','KNN','Decision Tree','Random Forest'])
 
 
