@@ -37,7 +37,7 @@ In all cases the appropriate sampling size is taken keeping in mind  the followi
 3. Confidence of error
 
 Step three: applying Ml models on each sample to find out accuracy
-<img width="693" alt="Screenshot 2023-02-20 at 4 25 06 AM" src="https://user-images.githubusercontent.com/73638083/219980265-c3fd6a17-1c82-4622-a7ab-d31a747408bb.png">
+<img width="693" alt="Screenshot 2023-02-20 at 4 34 27 AM" src="https://user-images.githubusercontent.com/73638083/219980656-31b3f941-cffb-4a2f-a603-c7230befbc71.png">
 
 Conclusion: 
 Random Forest classifer on a sample that has been Stratified gives best result.
